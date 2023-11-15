@@ -7,5 +7,6 @@
   "cSpell.useGitignore": true,
   "git.autorefresh": false,
   "git.enabled": true,
-  "git.branchRandomName.enable": true
+  "git.branchRandomName.enable": true,
+  "git.optimisticUpdate": false
 }
