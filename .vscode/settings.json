@@ -8,5 +8,8 @@
   "git.autorefresh": false,
   "git.enabled": true,
   "git.branchRandomName.enable": true,
-  "git.optimisticUpdate": false
+  "git.optimisticUpdate": false,
+  "errorLens.enableOnDiffView": true,
+  "git.enableCommitSigning": false,
+  "git.decorations.enabled": true
 }
