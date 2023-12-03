@@ -3,12 +3,13 @@ import { LightningElement } from 'lwc';
 export default class Practice9 extends LightningElement {
 
     // property|field to store selected option
-    selectedValue = 'VA'; 
+    selectedValue = ''; 
 
     // this is the format that we need to provide the options 
     // for the picklist 
     get options() {
         return [
+            { label: '--NONE--', value: '' },
             { label: 'Virginia', value: 'VA' },
             { label: 'Maryland', value: 'MD' },
             { label: 'California', value: 'CA' },
@@ -25,6 +26,10 @@ export default class Practice9 extends LightningElement {
     handleChange(event) {
         this.selectedValue = event.detail.value; 
     }
+//getter method to check if selectedValue is VA or MD
+get isCapitalArea(){
 
+    return this.selectedValue==='VA'|| this.selectedValue==='MD';
+}
 
 }
